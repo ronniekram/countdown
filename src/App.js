@@ -7,6 +7,9 @@ const App = () => {
       <div>
         WE'RE LAUNCHING SOON
       </div>
+
+        <Countdown />
+
     </div>
   );
 };

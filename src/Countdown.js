@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { countdown } from './assets/style';
 
 const Countdown = () => {
   const future = new Date(Date.now() + 2592000000);
@@ -53,8 +54,34 @@ const Countdown = () => {
 
 
   return (
-    <div>
+    <div className="flex flex-row font-red-hat mx-auto my-12">
+      <div className={countdown.unit}>
+        <div className={countdown.timer}>
+          {days}
+        </div>
+        <div className={countdown.label}>DAYS</div>
+      </div>
 
+      <div className={countdown.unit}>
+        <div className={countdown.timer}>
+          {hours}
+        </div>
+        <div className={countdown.label}>HOURS</div>
+      </div>
+
+      <div className={countdown.unit}>
+        <div className={countdown.timer}>
+          {minutes}
+        </div>
+        <div className={countdown.label}>MINUTES</div>
+      </div>
+
+      <div className={countdown.unit}>
+        <div className={countdown.timer}>
+          {seconds}
+        </div>
+        <div className={countdown.label}>SECONDS</div>
+      </div>
     </div>
   );
 };
