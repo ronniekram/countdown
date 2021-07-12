@@ -54,7 +54,7 @@ const Countdown = () => {
 
 
   return (
-    <div className="flex flex-row font-red-hat mx-auto my-12">
+    <div className="flex flex-row font-red-hat mx-auto sm:my-20 my-8">
       <div className={countdown.unit}>
         <div className={countdown.timer}>
           {days}
