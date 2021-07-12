@@ -3,7 +3,6 @@ import { countdown } from './assets/style';
 
 const Countdown = () => {
   const future = new Date(Date.now() + 2592000000);
-  const futureString = future.toDateString().split(' ').slice(1).join(' ');
 
   const [date, setDate] = useState({
     days: null,
@@ -54,7 +53,7 @@ const Countdown = () => {
 
 
   return (
-    <div className="flex flex-row font-red-hat mx-auto sm:my-20 my-8">
+    <div className="flex flex-row content-center font-red-hat mx-auto sm:my-20 my-8">
       <div className={countdown.unit}>
         <div className={countdown.timer}>
           {days}
